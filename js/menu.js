@@ -152,11 +152,11 @@ function showMissions() {
 // Loads all objects and textures for the selected mission and stats the mission after.
 function loadMission(missionCode) {
     var manager = new THREE.LoadingManager();
-    $('#container').innerHTML = 'Loading mission ' + missionCode;
+    $('#container').innerHTML = 'Chargement de la mission ' + missionCode;
     loadingManager.totalObjects = 0;
     var missionReady = false;
     loadingManager.loadedCallback = function() {
-        $('#container').innerHTML = 'Launching mission';
+        $('#container').innerHTML = 'Lancement de la mission';
         setTimeout(function() { playMission(missionCode); }, 9000);
     }
     controls.enabled = false;
@@ -492,7 +492,7 @@ function buyShopItem(weaponIndex) {
     });
     if (buy == true) {
         if (availableWeapons[weaponIndex].price <= gameSettings.score) {
-            $('#buy-options').innerHTML = '<a id="buy-'+ weaponIndex +'" class="buy">Buy for $ '+ availableWeapons[weaponIndex].price +' now!</a>';
+            $('#buy-options').innerHTML = '<a id="buy-'+ weaponIndex +'" class="buy">Acheter pour '+ availableWeapons[weaponIndex].price +' $</a>';
         }
         else {
             $('#buy-options').innerHTML = '<a class="cannot-buy">$ '+ availableWeapons[weaponIndex].price +'</a>';
@@ -503,7 +503,7 @@ function buyShopItem(weaponIndex) {
         if (availableWeapons[weaponIndex].sellPrice != null) {
             sellPrice = availableWeapons[weaponIndex].sellPrice;
         }
-        $('#buy-options').innerHTML = '<a id="sell-'+ weaponIndex +'"  class="sell">Sell for $ '+ sellPrice +'</a>';
+        $('#buy-options').innerHTML = '<a id="sell-'+ weaponIndex +'"  class="sell">Vendre pour '+ sellPrice +' $</a>';
     }
     if ($('#buy-' + weaponIndex) != null) {
         $('#buy-' + weaponIndex).removeEventListener('click', function() {}, false);

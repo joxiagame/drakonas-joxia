@@ -5,9 +5,9 @@
  */
 var availableWeapons = new Array();
 availableWeapons[0]       = {
-    "name":             "Single Machine Gun",
-    "description":      "Very fast machine gun. Shooting both ground and air targets.",
-    "longDescription":  "Very fast machine gun. Shooting both ground and air targets.",
+    "name":             "Mitrailleuse simple",
+    "description":      "Mitrailleuse très rapide. Touche les cibles au sol et en l'air.",
+    "longDescription":  "Mitrailleuse très rapide. Touche les cibles au sol et en l'air.",
     "price":            5000,
     "sellPrice":        5000, // Make sure that the player can not sell himself bankrupt.
     "geometry":         new THREE.BoxGeometry(.2,.2,.2),
@@ -32,7 +32,7 @@ availableWeapons[0]       = {
     ]
 }
 availableWeapons[1]       = {
-    "name":             "Plasma cannon",
+    "name":             "Canon à plasma",
     "description":      "",
     "longDescription":  "",
     "price":            25000,
@@ -58,7 +58,7 @@ availableWeapons[1]       = {
     ]
 }
 availableWeapons[2]       = {
-    "name":             "Right air missle",
+    "name":             "Missile air droit",
     "description":      "",
     "longDescription":  "",
     "price":            35000,
@@ -95,7 +95,7 @@ availableWeapons[2]       = {
     ]
 }
 availableWeapons[3]       = {
-    "name":             "Left air missle",
+    "name":             "Missile air gauche",
     "description":      "",
     "longDescription":  "",
     "price":            35000,

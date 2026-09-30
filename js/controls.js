@@ -173,7 +173,7 @@ function addPauseListeners() {
         }, false );
 
     } else {
-        document.getElementById('pause').innerHTML = 'Your browser probably sucks. Use <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Google Chrome</a> and report back for duty!';
+        document.getElementById('pause').innerHTML = 'Ton navigateur n\'est pas compatible. Utilise <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a> ou <a href="https://www.google.com/intl/fr/chrome/browser/" target="_blank">Google Chrome</a> et reviens au combat !';
     }
 }
 
@@ -231,7 +231,7 @@ function onInGameDocumentMouseMove( event ) {
 function exit() {
     if (!window.close()) {
         $('#container').innerHTML = '<div class="title text-center">Drakonas</div>';
-        $('#container').innerHTML += '<div class="text-center"><p>Thanks for playing! Close the window by pressing "ctrl + w" or "alt + F4".</p><p>Check <a href="http://games.fellicht.nl/">games.fellicht.nl</a> for more amazing games!</p></div>';
+        $('#container').innerHTML += '<div class="text-center"><p>Merci d\'avoir joué ! Ferme la fenêtre avec « Ctrl + W » ou « Alt + F4 ».</p><p>Plus de jeux sur <a href="http://games.fellicht.nl/">games.fellicht.nl</a> !</p></div>';
     }
 }
 
