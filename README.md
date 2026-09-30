@@ -1,3 +1,7 @@
+<!-- joxia-credits -->
+> 🎮 **Fork Joxia Games** de [Casmo/Drakonas](https://github.com/Casmo/Drakonas) — jeu original de ses auteurs, licence **MIT** (fichier `LICENSE` d'origine conservé). Jouer : https://joxiagame.github.io/drakonas-joxia/ · Crédits : [`CREDITS.md`](CREDITS.md) · Liste source : [leereilly/games](https://github.com/leereilly/games)
+<!-- /joxia-credits -->
+
 Drakonas
 ========
 Drakonas will be a classic shoot 'em up game build with the Three.js library.  The idea is based on Raptor: Call of the shadows. A classic dos game published by Apogee Software.
